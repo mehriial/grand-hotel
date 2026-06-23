@@ -199,12 +199,12 @@ button {
     margin-bottom: 20px;
 }
 
-.signin__header {
+.auth__header {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.signin__header h3 {
+.auth__header h3 {
     font-size: 32px;
     font-weight: 700;
     color: var(--neutral-950);
@@ -212,7 +212,7 @@ button {
     margin-top: 0;
 }
 
-.signin__header p {
+.auth__header p {
     color: var(--neutral-700);
     font-size: 14px;
 }
@@ -385,7 +385,7 @@ input:not([type="checkbox"]):focus {
     text-align: center;
 }
 
-.otp__modal__overlay {
+.modal__overlay {
     display: none;
     position: fixed;
     inset: 0;
@@ -398,32 +398,63 @@ input:not([type="checkbox"]):focus {
     -webkit-backdrop-filter: blur(4px);
 }
 
-.otp__modal__overlay.show {
+.modal__overlay.show {
     display: flex;
 }
 
-.otp__modal__box {
+.modal__box {
     background: white;
-    width: 75%;
     max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 20px 40px;
     border-radius: 10px;
     position: relative;
 }
 
-.otp__modal__box .modal__group__btn {
+.modal__box .modal__group__btn {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap:20px;
 }
 
-.otp__modal__box .modal__group__btn button {
+.modal__box .modal__group__btn button {
     border: none;
-    max-width: 120px;
+    max-width: 200px;
 
 }
 
 .outline__button.disagree__btn {
     color: var(--color-alert-error);
+}
+
+.modal__icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.modal__icon.success {
+    background-color: var(--color-alert-success);
+    color: #fff;
+}
+
+.modal__icon__container, .modal__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__title {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.modal__desc {
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--neutral-800);
+    font-weight: 600;
 }

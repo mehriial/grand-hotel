@@ -58,18 +58,30 @@ if ($('.otp__input').length) {
 
 if ($('#otp__c__btn').length) {
     $('#otp__c__btn').on('click', function () {
-        $('#otp__modal').addClass('show')
+        $('#modal').addClass('show')
     })
 }
 
 if ($('.disagree__btn').length) {
     $('.disagree__btn').on('click', function () {
-        $('#otp__modal').removeClass('show')
+        $('#modal').removeClass('show')
     })
 }
 
 if ($('.agree__btn').length) {
     $('.agree__btn').on('click', function () {
-       window.location.href = 'home.html'
+        window.location.href = 'home.html'
+    })
+}
+
+if ($('#reset__password__btn').length) {
+    $('#reset__password__btn').on('click', function () {
+        $('#modal').addClass('show')
+    })
+}
+
+if ($('#forgot__password__btn').length) {
+    $('#forgot__password__btn').on('click', function () {
+        window.location.href = 'reset-password.html'
     })
 }
