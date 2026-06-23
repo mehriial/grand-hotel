@@ -1,9 +1,11 @@
 :root {
     --primary: #2853AF;
+    --secondary: #E8F2FF;
     --gray-scale: #fdfdfd;
     --bg-input: #F6F6F6;
     --color-alert-error: #F41F52;
     --color-alert-success: #66CB63;
+    --color-alert-warning: #EDB900;
     --neutral-950: #171725;
     --neutral-800: #66707A;
     --neutral-700: #434E58;
@@ -13,4 +15,5 @@
     --color-divider: #E9EBED;
     --color-icon: #8E8E8E;
     --color-text-gray: #D9D9D9;
+    --color-border-icon: #DADDDD;
 }

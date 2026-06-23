@@ -80,8 +80,38 @@ if ($('#reset__password__btn').length) {
     })
 }
 
+if ($('.reset__ok__btn').length) {
+    $('.reset__ok__btn').on('click', function () {
+        window.location.href = 'signin.html'
+    })
+}
+
 if ($('#forgot__password__btn').length) {
     $('#forgot__password__btn').on('click', function () {
         window.location.href = 'reset-password.html'
+    })
+}
+
+
+if ($('.back__navigate').length) {
+    $('.back__navigate').on('click', function () {
+        history.go(-1);
+    })
+}
+
+if ($('.remember__checkbox').length) {
+    $(".remember__checkbox").on("change", function () {
+        if ($(this).is(":checked")) {
+            $(this).addClass("checked");
+        } else {
+            $(this).removeClass("checked");
+        }
+    });
+}
+
+if ($('.rec-tab-item').length) {
+    $('.rec-tab-item').on('click', function () {
+        $('.rec-tab-item').removeClass('active');
+        $(this).addClass("active");
     })
 }
