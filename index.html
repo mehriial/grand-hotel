@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Grand Hotel</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section class="splash" id="splash">
+        <div class="splash__container">
+            <img src="./assets/images/logo.svg" alt="logo">
+            <h1>Grand Hotel</h1>
+            <p class="font-plus-jakarta">
+                Find Your Perfect Stay, Anytime, Anywhere
+            </p>
+        </div>
+    </section>
+
+    <div id="onboarding">
+        <section class="onboarding">
+            <div class="slides" id="slides">
+
+                <div class="slide">
+                    <img src="./assets/images/on_boarding_1.png" alt="on_boarding_1">
+                    <div class="overlay">
+                        <h2 class="overlay__heading">Luxury and Comfort, Just a Tap Away</h2>
+                        <p>Semper in cursus magna et eu varius nunc adipiscing. Elementum justo, laoreet id sem.</p>
+
+                        <div class="dots">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <button id="boarding_btn_1" class="primary__button">Continue</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/images/on_boarding_2.png" alt="on_boarding_2">
+                    <div class="overlay">
+                        <h2>Book with Ease, Stay with Style</h2>
+                        <p>Semper in cursus magna et eu varius nunc adipiscing. Elementum justo, laoreet id sem.</p>
+
+                        <div class="dots">
+                            <span></span>
+                            <span class="active"></span>
+                            <span></span>
+                        </div>
+
+                        <button id="boarding_btn_2" class="primary__button">Continue</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/images/on_boarding_3.png" alt="on_boarding_3">
+                    <div class="overlay">
+                        <h2>Discover Your Dream Hotel, Effortlessly</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button id="boarding_btn_3" class="primary__button">Get Started</button>
+                        <p>Don’t have an account? <a class="register_href" href="#signup.html">Register</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/splash.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

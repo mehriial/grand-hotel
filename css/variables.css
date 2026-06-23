@@ -1,0 +1,14 @@
+:root {
+    --primary: #2853AF;
+    --gray-scale: #fdfdfd;
+    --bg-input: #F6F6F6;
+    --color-alert-error: #F41F52;
+    --neutral-950: #171725;
+    --neutral-700: #434E58;
+    --neutral-600: #78828A;
+    --neutral-500: #9CA4AB;
+    --neutral-100: #E3E9ED;
+    --color-divider: #E9EBED;
+    --color-icon: #8E8E8E;
+    --color-text-gray: #D9D9D9;
+}
