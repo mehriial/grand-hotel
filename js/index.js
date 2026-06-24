@@ -109,9 +109,9 @@ if ($('.remember__checkbox').length) {
     });
 }
 
-if ($('.rec-tab-item').length) {
-    $('.rec-tab-item').on('click', function () {
-        $('.rec-tab-item').removeClass('active');
+if ($('.rec__tab__item').length) {
+    $('.rec__tab__item').on('click', function () {
+        $('.rec__tab__item').removeClass('active');
         $(this).addClass("active");
     })
 }
