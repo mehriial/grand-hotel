@@ -107,7 +107,7 @@ main {
     object-fit: cover;
 }
 
-.overlay {
+.slide .overlay {
     position: absolute;
     inset: 0;
     display: flex;
@@ -122,7 +122,7 @@ main {
     color: white;
 }
 
-.overlay p {
+.slide .overlay p {
     margin: 0;
     margin-top: 10px;
     font-size: 14px;
@@ -821,18 +821,6 @@ input:not([type="checkbox"]):focus {
     text-decoration: line-through;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .bottom__nav {
     position: fixed;
     bottom: 0;
@@ -842,7 +830,7 @@ input:not([type="checkbox"]):focus {
     max-width: 430px;
     height: 72px;
     background: #fff;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--color-divider);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -852,7 +840,7 @@ input:not([type="checkbox"]):focus {
 
 .nav__item {
     text-decoration: none;
-    color: #9A9A9A;
+    color: var(--neutral-600);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -865,4 +853,153 @@ input:not([type="checkbox"]):focus {
 
 .nav__item.active {
     color: var(--primary);
+}
+
+.map__page {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background: url('../assets/images/map_nearby_hotel.png');
+    padding: 20px;
+}
+
+.map__page .top__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.circle__btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-smoke);
+    border: 1px solid var(--color-divider);
+    flex-shrink: 0;
+}
+
+.top__bar h1 {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--neutral-950);
+    font-weight: 600;
+}
+
+.map__page .search__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.map__page .search__box input {
+    background-color: #fff;
+    border: 1px solid var(--color-divider);
+    border-radius: 24px;
+    padding: 18px 42px;
+    width: 100%;
+}
+
+.search__box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.search__box .search__icon {
+    left: 5%;
+}
+
+.search__box .filter__icon {
+    right: 5%;
+    border-left: 1px solid var(--color-divider);
+    padding-left: 16px;
+}
+
+.book__cards {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 5%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.book__card {
+    flex: 0 0 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.book__card .rec__card {
+    border-bottom: none;
+}
+
+.book__card .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.book__card .actions .primary__button {
+    border-radius: 24px;
+}
+
+.book__card .actions .circle__btn {
+    width: 56px;
+    height: 56px;
+}
+
+.map__marker {
+    position: absolute;
+    width: 64px;
+    z-index: 2;
+}
+
+.map__marker img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.map__marker span {
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.map__marker span i {
+    color: var(--color-alert-warning);
+}
+
+.marker-1{
+    top:180px;
+    left:40px;
+}
+
+.marker-2{
+    top:300px;
+    right:35px;
+}
+
+.marker-3{
+    top:400px;
+    left:150px;
 }
